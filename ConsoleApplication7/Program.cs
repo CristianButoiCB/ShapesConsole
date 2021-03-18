@@ -21,6 +21,8 @@ namespace ConsoleApplication7
 
             Triangle trng = new Triangle(10, 10, 10, 7, 10);
             Console.WriteLine($"Name {trng.name} Perimeter {trng.perimeter} Area {trng.area} ");
+            Triangle trngiso = new Triangle(20, 20, 10, 7, 10);
+            Console.WriteLine($"Name {trngiso.name} Perimeter {trngiso.perimeter} Area {trngiso.area} ");
 
             Console.WriteLine(trng.name);
             Quadri q = new Quadri(10, 10, 10, 10);
@@ -99,7 +101,9 @@ namespace ConsoleApplication7
                 {
                     return "circle"+this.GetHashCode();
                 }
-            set { }
+                set 
+                {
+                }
             
             }
             public override float perimeter
